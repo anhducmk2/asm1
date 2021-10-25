@@ -28,7 +28,7 @@ hbs.registerPartials(__dirname + '/views/partials')
 var bodyParser = require("body-parser");     //mot doi tuong body chua du lieu ma da duoc phan tich cu pham se duoc dua vao request. du lieu do la cap key-value, trong do co the la true, array, string neeu extended false, cac loai con lai la true
 app.use(bodyParser.urlencoded({ extended: false }));
 
-var url = 'mongodb+srv://anhvu123:anhvu123@cluster0.e6pnm.mongodb.net/test'
+var url = 'mongodb+srv://anhduc:123@cluster0.sv2mq.mongodb.net/Cluster0'
 
 app.get('/', async(req, res) => {    //async khai bao ham bat dong bo - await tam dung ham bat dong bo
     let client = await MongoClient.connect(url);
